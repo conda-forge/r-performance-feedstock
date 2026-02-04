@@ -1,4 +1,4 @@
-{% set version = "0.15.3" %}
+{% set version = "0.16.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/performance_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/performance/performance_{{ version }}.tar.gz
-  sha256: 867249bf039fa5a08d71a31e8456b14f835de530c7e41ebe30627cf05fbe108f
+  sha256: 536b117318e7697a50449dac172f85dc37c84cc86717d4b3bc9ae7742242907d
 
 build:
   number: 0
@@ -41,8 +41,8 @@ test:
 about:
   home: https://easystats.github.io/performance/
   license: GPL-3.0-only
-  summary: Utilities for computing measures to assess model quality, which are not directly provided by R's 'base' or 'stats' packages. These  include e.g. measures like r-squared, intraclass correlation coefficient (Nakagawa, Johnson & Schielzeth (2017) <doi:10.1098/rsif.2017.0213>),  root mean squared error or functions
-    to check models for overdispersion,  singularity or zero-inflation and more. Functions apply to a large variety of regression models, including generalized linear models, mixed effects models and Bayesian models.
+  summary: Utilities for computing measures to assess model quality, which are not directly provided by R's 'base' or 'stats' packages. These  include e.g. measures like r-squared, intraclass correlation coefficient (Nakagawa, Johnson & Schielzeth (2017) <doi:10.1098/rsif.2017.0213>),  root mean squared error or 
+    functions to check models for overdispersion,  singularity or zero-inflation and more. Functions apply to a large variety of regression models, including generalized linear models, mixed effects models and Bayesian models.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
