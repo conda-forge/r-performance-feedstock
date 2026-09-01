@@ -1,4 +1,4 @@
-{% set version = "0.18.0" %}
+{% set version = "0.18.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/performance_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/performance/performance_{{ version }}.tar.gz
-  sha256: cc358789c62f5d04877ff9099dbe2041d8750730591576e6afd4a5beb68b9a0b
+  sha256: c97c41470e643eebe1f38c846f406c95e1bc695813f97a9c4cbdbfb763b6b757
 
 build:
   number: 0
